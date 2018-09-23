@@ -1,0 +1,66 @@
+/*
+*   GoogleMapsinfoWindow-JS v1.0
+*   Thomas Naylor
+*
+*   Demonstration of apply a custom HTML infoWindow on the Google Maps API
+*   API: https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY
+*/
+
+html, body, #google-map-script {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#infoBox {
+  width: 600px;
+  height: auto;
+  overflow: hidden !important;
+}
+
+#infoBox #siteImg {
+  width: 250px;
+  height:250px;
+  margin: 5px;
+  display: inline-block;
+  float: left;
+}
+
+#infoBox #siteHeading {
+  border-bottom: 1px solid grey;
+  color: grey;
+}
+
+#infoBox #siteCont {
+  width: 330px;
+  height: auto;
+  margin: 5px;
+  float: right;
+}
+
+#infoBox #siteDesc {
+  color: grey;
+}
+
+#infoBox #siteLink {
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+  margin-left: 30%;
+  transition: all 0.2s ease-in;
+  letter-spacing: 2px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 16px;
+  float: left;
+  text-align: center;
+  border: 1px solid grey;
+  color: white;
+  background-color: grey;
+}
+
+#infoBox #siteLink:hover {
+  color: black;
+  transition: all 0.2s ease-in;
+  background-color: white;
+}
